@@ -115,13 +115,9 @@ function setCoords() {
 				truTop: pos.top,
 				truLeft: pos.left
 			});
-					console.log($('.content_container').css('margin-left').replace(/[^-\d\.]/g, ''));
+					
 		});		
 		isLoaded = true;
-		console.log(coordinates);
-
-
-
 	}	
 		
 	function onMouseMove(e){
@@ -131,8 +127,7 @@ function setCoords() {
 				left : (xOffset + e.clientX - _startX),
 				top : (yOffset + e.clientY - _startY)
 			});				
-			
-			console.log('x : ' + e.clientX + ' y : ' + e.clientY);
+		
 			
 			for (var i in coordinates) {
 				if (e.clientX >= coordinates[i].left && e.clientX <= coordinates[i].right) {			
